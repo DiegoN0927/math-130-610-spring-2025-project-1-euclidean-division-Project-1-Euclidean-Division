@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+/**
+ * @author Diego Navarrete
+ */
+public class EuclideanDivision
+{
+    public static void main(String[] args)
+    {
+        Scanner input =  new Scanner(System.in);
+        int dividend, divisor, quotient, remainder;
+
+        //showing user what will display
+        System.out.println("Euclidean Division");
+        //Ask user to enter the integer they want to divide
+        System.out.print("Enter the dividend: ");
+        dividend = input.nextInt();
+
+        //Enter what integer the user wants to divide by
+        System.out.print("Enter the divisor: ");
+        divisor = input.nextInt();
+
+        //the b in "bq + r"
+        quotient = dividend / divisor;
+        //will need the modulo to find the remainder
+        remainder = dividend % divisor;
+
+        System.out.println(dividend + " = " + quotient + " * " + divisor + " + " + remainder);
+    }
+}
